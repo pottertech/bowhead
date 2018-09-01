@@ -83,7 +83,7 @@ trait Pivots
             if ($data['close'][$a] > $data['open'][$a]){
                 $x = (($data['high'][$a] * 2) + $data['low'][$a] + $data['close'][$a]);
             }
-            if ($data['close'][$a] > $data['open'][$a]){
+            if ($data['close'][$a] == $data['open'][$a]){
                 $x = ($data['high'][$a] + $data['low'][$a] + ($data['close'][$a] * 2));
             }
             $p = $x/4;
